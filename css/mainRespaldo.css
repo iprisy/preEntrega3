@@ -1,0 +1,216 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px; 100px
+    grid-template-columns: 100px; 100px; 100px;
+  }
+
+.grid-item{
+    border: 1px solid red;
+
+
+}
+
+.item1{
+    background-color: blueviolet;
+
+}
+
+.item2{
+    background-color: yellow;
+    
+}
+.item3{
+    background-color: red;
+
+}
+.item4{
+    background-color: green;
+
+}
+.item5{
+    background-color:magenta;
+
+}
+
+.navbar .navbar-nav .nav-link .nav-item{
+    color:azure;
+    font-size: 3em;
+}
+
+li{
+    color: beige;
+
+
+}
+
+h2 {text-align: center;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color: #808080;
+}
+.sm-icons {
+  flex-direction: row;
+}
+@media only screen and (max-width: 960px) {
+  .sm-icons .nav-item {
+    padding-right: 1em;
+  }
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+
+  .form-outline {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+  }
+  
+  .form button {
+    padding: 0.5em 1em;
+    border: none;
+    background: rgb(255, 100, 100);
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+ 
+
+
+
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  footer {
+    display: block;
+}
+
+    .container2 {  display: grid;
+      grid-template-columns: 0.5fr 1fr 1fr 2.5fr 0.5fr;
+      grid-template-rows: 50px 1fr 1fr 1fr;
+      
+      gap: 5px 5px;
+      grid-auto-flow: row;
+      align-content: center;
+      align-items: stretch;
+      grid-template-areas:
+        ". FOTO DATOS DESCRIPCION ."
+        ". FOTO1 DATOS1 DESCRIPCION1 ."
+        ". FOTO2 DATOS2 DESCRIPCION2 ."
+        ". FOTO3 DATOS3 DESCRIPCION3 .";
+
+    }
+    
+    .FOTO { grid-area: FOTO; align-self: center; }
+    
+    .DATOS { grid-area: DATOS; align-self: center; }
+    
+    .FOTO1 { grid-area: FOTO1; border-style:solid;
+      border-width: 1px; }
+    
+    .DESCRIPCION { grid-area: DESCRIPCION; align-self: center; }
+    
+    .DATOS1 {  display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 33% 33% 33%;
+      gap: 5px 5px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "USUARIO1 USUARIO1 USUARIO1"
+        "UBICACION1 UBICACION1 UBICACION1"
+        "FECHA1 FECHA1 FECHA1";
+      grid-area: DATOS1;
+      border-style:solid;
+      border-width: 1px;
+    }
+    
+    .USUARIO1 { grid-area: USUARIO1; }
+    
+    .UBICACION1 { grid-area: UBICACION1; }
+    
+    .FECHA1 { grid-area: FECHA1; }
+    
+    .DESCRIPCION1 { grid-area: DESCRIPCION1; border-style:solid;
+      border-width: 1px; }
+    
+    .FOTO2 { grid-area: FOTO2; border-style:solid;
+      border-width: 1px;}
+    
+    .DESCRIPCION2 { grid-area: DESCRIPCION2; border-style:solid;
+      border-width: 1px; }
+    
+    .DATOS2 {  display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 33% 33% 33%;
+      gap: 5px 5px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "USUARIO2 USUARIO2 USUARIO2"
+        "UBICACION2 UBICACION2 UBICACION2"
+        "FECHA2 FECHA2 FECHA2";
+      grid-area: DATOS2;
+      border-style:solid;
+      border-width: 1px;
+    }
+    
+    .USUARIO2 { grid-area: USUARIO2; }
+    
+    .UBICACION2 { grid-area: UBICACION2; }
+    
+    .FECHA2 { grid-area: FECHA2; }
+    
+    .FOTO3 { grid-area: FOTO3; border-style:solid;
+      border-width: 1px;  }
+    
+    .DESCRIPCION3 { grid-area: DESCRIPCION3; border-style:solid;
+      border-width: 1px; }
+    
+    .DATOS3 {  display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 33% 33% 33%;
+      gap: 5px 5px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "USUARIO3 USUARIO3 USUARIO3"
+        "UBICACION3 UBICACION3 UBICACION3"
+        "FECHA-3 FECHA-3 FECHA-3";
+      grid-area: DATOS3;
+      border-style:solid;
+      border-width: 1px;
+    }
+    
+    .USUARIO3 { grid-area: USUARIO3; }
+    
+    .UBICACION3 { grid-area: UBICACION3; }
+    
+    .FECHA-3 { grid-area: FECHA-3; }
+
+
+      .gradient-custom-4 {
+     
+      background: blue;
+      
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+      
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+      }
+    
+    
