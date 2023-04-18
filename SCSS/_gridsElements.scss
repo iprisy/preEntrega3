@@ -1,0 +1,203 @@
+.card {
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: $anchoGrid, $anchoGrid;
+    grid-template-columns: $anchoGrid, $anchoGrid, $anchoGrid;
+}
+
+.grid-item {
+    border: $bordeMinimo solid $rojo;
+}
+
+.item1 {
+    background-color: $azulVioleta;
+
+}
+
+.item2 {
+    background-color: $amarillo;
+
+}
+
+.item3 {
+    background-color: $rojo;
+
+}
+
+.item4 {
+    background-color: $verde;
+
+}
+
+.item5 {
+    background-color: $rosado;
+
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: calc($fraccion/2) $fraccion $fraccion calc(2.5*$fraccion) calc($fraccion/2);
+    grid-template-rows: $bordeMinimo*50 $fraccion $fraccion $fraccion;
+    gap: $gaps $gaps;
+    grid-auto-flow: row;
+    align-content: center;
+    align-items: stretch;
+    grid-template-areas:
+        ". FOTO DATOS DESCRIPCION ."
+        ". FOTO1 DATOS1 DESCRIPCION1 ."
+        ". FOTO2 DATOS2 DESCRIPCION2 ."
+        ". FOTO3 DATOS3 DESCRIPCION3 .";
+
+}
+
+.FOTO {
+    grid-area: FOTO;
+    align-self: center;
+}
+
+.DATOS {
+    grid-area: DATOS;
+    align-self: center;
+}
+
+.FOTO1 {
+    grid-area: FOTO1;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.DESCRIPCION {
+    grid-area: DESCRIPCION;
+    align-self: center;
+}
+
+.DATOS1 {
+    display: grid;
+    grid-template-columns: $fraccion $fraccion $fraccion;
+    grid-template-rows: 33% 33% 33%;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "USUARIO1 USUARIO1 USUARIO1"
+        "UBICACION1 UBICACION1 UBICACION1"
+        "FECHA1 FECHA1 FECHA1";
+    grid-area: DATOS1;
+    border-style: solid;
+    border-width: $bordeMinimo
+}
+
+.USUARIO1 {
+    grid-area: USUARIO1;
+}
+
+.UBICACION1 {
+    grid-area: UBICACION1;
+}
+
+.FECHA1 {
+    grid-area: FECHA1;
+}
+
+.DESCRIPCION1 {
+    grid-area: DESCRIPCION1;
+    border-style: solid;
+    border-width: $bordeMinimo;
+}
+
+.FOTO2 {
+    grid-area: FOTO2;
+    border-style: solid;
+    border-width: $bordeMinimo;
+}
+
+.DESCRIPCION2 {
+    grid-area: DESCRIPCION2;
+    border-style: solid;
+    border-width: $bordeMinimo;
+}
+
+.DATOS2 {
+    display: grid;
+    grid-template-columns: $fraccion $fraccion $fraccion;
+    grid-template-rows: 33% 33% 33%;
+    gap: 5*$bordeMinimo 5*$bordeMinimo;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "USUARIO2 USUARIO2 USUARIO2"
+        "UBICACION2 UBICACION2 UBICACION2"
+        "FECHA2 FECHA2 FECHA2";
+    grid-area: DATOS2;
+    border-style: solid;
+    border-width: $bordeMinimo;
+}
+
+.USUARIO2 {
+    grid-area: USUARIO2;
+}
+
+.UBICACION2 {
+    grid-area: UBICACION2;
+}
+
+.FECHA2 {
+    grid-area: FECHA2;
+}
+
+.FOTO3 {
+    grid-area: FOTO3;
+    border-style: solid;
+    border-width: $bordeMinimo;
+}
+
+.DESCRIPCION3 {
+    grid-area: DESCRIPCION3;
+    border-style: solid;
+    border-width: $bordeMinimo;
+}
+
+.DATOS3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33% 33% 33%;
+    gap: 5*$bordeMinimo 5*$bordeMinimo;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "USUARIO3 USUARIO3 USUARIO3"
+        "UBICACION3 UBICACION3 UBICACION3"
+        "FECHA-3 FECHA-3 FECHA-3";
+    grid-area: DATOS3;
+    border-style: solid;
+    border-width: $bordeMinimo;
+}
+
+.USUARIO3 {
+    grid-area: USUARIO3;
+}
+
+.UBICACION3 {
+    grid-area: UBICACION3;
+}
+
+.FECHA-3 {
+    grid-area: FECHA-3;
+}
+
+
+.gradient-custom-4 {
+
+    background: $azul;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
